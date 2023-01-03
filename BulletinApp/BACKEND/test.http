@@ -1,0 +1,37 @@
+GET https://localhost:3000/api/post HTTP/1.1
+###
+POST https://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username":"ST10116273",
+    "password":"Password1"
+}
+###
+
+POST https://localhost:3000/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+ "username": "ST10116273",
+ "password": "Password1"
+ 
+}
+
+###
+POST https://localhost:3000/api/post HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNUMTAxMTYyNzMiLCJ1c2VyaWQiOiI2MzNjOTM1ODFhODhiY2JjODY5Mzc1OGQiLCJpYXQiOjE2NjQ5MTQ1NjAsImV4cCI6MTY2NTUxOTM2MH0.X7TmTDfAd9SUdtTPqs09NyINWUcEjACLpJW-Zje5vg4
+
+
+{
+ "id": "1",
+    "title":"Storage issues",
+    "status":"High",
+    "description":"There is no space"
+}
+
+###
+DELETE https://localhost:3000/api/post/633c96481a88bcbc86937594 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNUMTAxMTYyNzMiLCJ1c2VyaWQiOiI2MzNjOTM1ODFhODhiY2JjODY5Mzc1OGQiLCJpYXQiOjE2NjQ5MTQ1NjAsImV4cCI6MTY2NTUxOTM2MH0.X7TmTDfAd9SUdtTPqs09NyINWUcEjACLpJW-Zje5vg4
+###
